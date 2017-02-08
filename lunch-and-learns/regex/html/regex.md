@@ -15,7 +15,7 @@ class: center, middle
 ---
 # Why use regex
 
-* Validation (as in [html5 forms](validation.html), for example)
+* Validation (as in <a href="validation.html" target="_blank">html5 forms</a>, for example)
 * Matching
 * Substitution
 * For powerful find &amp; replace. Use them in your text editor or IDE to easily update code.
@@ -160,11 +160,14 @@ See the [famous StackOverflow post](http://stackoverflow.com/questions/1732348/r
 
 # Regular expressions in Slate code
 
+
 ```python
 url(r'feeds/third-party/', include('my_slate.api.feeds.urls')),
 (r'^ingest_article/(?P<articleId>[^/]+)/(?P<update>[^/]+)', views.add_article_to_cache),
 (r'^ingest_article/(?P<articleId>[^/]+)', views.add_article_to_cache),
 ```
+
+---
 
 
 
