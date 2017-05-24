@@ -11,6 +11,7 @@ class: center, middle
 * Apex ([apex.run](http://apex.run))
 * Slack app / API
 * Github webhooks / API
+* MySlate users API
 
 ---
 
@@ -62,6 +63,13 @@ class: center, middle
 
 ---
 
+# MySlate users API
+
+* I used Django Rest Framework to make a quick API interface to the SlackUser model so people can record their notification preferences
+* It also looks people up in the Slack API so we don&rsquo;t have to do that every time
+
+---
+
 # Example: Create &amp; interact with a PR
 
 ---
@@ -69,5 +77,4 @@ class: center, middle
 # _`#TODO`_
 
 * Climb out from under babel-webpack2
-* Get the `Merge & Delete Branch` button actually working
 * ?
