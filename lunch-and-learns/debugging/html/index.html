@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Debugging: Shrödinger's Code</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono:400,700,400italic);
+      @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab');
+      @import url('https://fonts.googleapis.com/css?family=Roboto');
+      h1, h2, h3 {
+        font-family: 'Amatic SC', sans-serif;
+      }
+      .remark-slide-content {
+        font-family: Roboto, sans-serif;
+        font-size: 16pt;
+      }
+      .remark-code, .remark-inline-code {
+        font-family: 'Roboto Mono', Consolas, Inconsolata, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+        sourceUrl: 'debugging.md',
+        highlightStyle: 'github',
+        highlightLines: true,
+        highlightSpans: true,
+        ratio: '16:9'
+      });
+    </script>
+  </body>
+</html>
