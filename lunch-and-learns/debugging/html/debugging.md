@@ -15,13 +15,13 @@ class: center, middle
 - Django 1.5 &rarr; 1.7, Python 2.6 &rarr; 2.7.9
 --
 
-- MySlate is blowing up in NewRelic (S+ podcast feed)
+- MySlate is blowing up in NewRelic
 --
 
 - Can&apos;t add rows to MySQL database after 2147483647
 --
 
-- Debugging Apple News launch (SSL)
+- Apple News launch
 
 ---
 
@@ -43,6 +43,30 @@ class: center, middle
 ## Reading Logs
 - Stacktrace / traceback
 - Django html error messages
+
+
+```
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/data/django/my_slate/lib/python2.7/site-packages/requests/api.py", line 69, in get
+    return request('get', url, params=params, **kwargs)
+  File "/data/django/my_slate/lib/python2.7/site-packages/requests/api.py", line 50, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "/data/django/my_slate/lib/python2.7/site-packages/requests/sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/data/django/my_slate/lib/python2.7/site-packages/requests/sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "/data/django/my_slate/lib/python2.7/site-packages/requests/adapters.py", line 370, in send
+    timeout=timeout
+  File "/data/django/my_slate/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py", line 544, in urlopen
+    body=body, headers=headers)
+  File "/data/django/my_slate/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "/data/django/my_slate/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py", line 314, in _raise_timeout
+    if 'timed out' in str(err) or 'did not complete (read)' in str(err):  # Python 2.6
+TypeError: __str__ returned non-string (type Error)
+```
+https://github.com/shazow/urllib3/issues/556
 
 ---
 
@@ -69,19 +93,19 @@ class: center, middle
 ---
 
 ## Code can live in many places:
-- Application files (.js, .py, .java)
+- Application files (.js, .py, .java, .scss)
 --
 
-- Configurations (properties files, .cfg files, environment vars, OSGI)
+- Configurations (properties files, .cfg files, environment/user vars, OSGI)
 --
 
-- Databases (MySQL, redis, etc.)
+- Databases (MySQL, redis)
 --
 
 - Memory
 --
 
-- Compiled code (.pyc, .class, jar, .css, etc.)
+- Compiled code (.pyc, .class, .jar, .css)
 --
 
 - Web browser: localStorage, cache, cookies
